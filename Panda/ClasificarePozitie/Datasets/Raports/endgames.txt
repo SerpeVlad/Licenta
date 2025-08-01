@@ -1,0 +1,32 @@
+About columns: 
+fen: 
+  -Type: object
+  -Unique values: 501
+  -Missing values: 0
+  -Mean:  Notapplicable
+type: 
+  -Type: object
+  -Unique values: 1
+  -Missing values: 0
+  -Mean:  Notapplicable
+game_id: 
+  -Type: object
+  -Unique values: 16
+  -Missing values: 0
+  -Mean:  Notapplicable
+
+
+Number of games: 16
+Median number of moves for each game: 26
+Min number of moves for a game: 1.0
+Max number of moves for a game: 44.0
+
+Material mediu Alb: 14.650698602794412
+Material mediu Negru: 14.353293413173652
+Material mediu: 14.501996007984033
+Numar mediu de pioni Alb: 4.439121756487026
+Numar mediu de pioni Negru: 4.151696606786427
+Numar mediu de pioni: 4.295409181636726
+Pioni la loc mediu Alb: 2.0159680638722555
+Pioni la loc mediu Negru: 1.652694610778443
+Pioni la loc mediu: 1.8343313373253494

@@ -1,0 +1,27 @@
+RandomForestClassifier(random_state=2)
+Training
+     Accuracy: 0.7286821705426356
+     Report:
+              precision    recall  f1-score   support
+
+     endgame       0.65      0.98      0.78        46
+  middlegame       0.83      0.37      0.51        51
+    oppening       0.76      0.88      0.81        32
+
+    accuracy                           0.71       129
+   macro avg       0.75      0.74      0.70       129
+weighted avg       0.75      0.71      0.68       129
+     Number of games: 15
+     Best parameters: {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+     Opening predicted as endgame: 0
+     Endgame predicted as opening: 0
+
+     Opening predicted as middlegame: 0
+     Middlegame predicted as opening: 0
+     Middlegame predicted as endgame: 1
+     Endgame predicted as middlegame: 23
+Test
+    Number of test positions: 274
+    Number of correct guesses: 202
+    Accuracy: 73.72%
+    Precision: 73.72%

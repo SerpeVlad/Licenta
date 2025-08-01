@@ -1,0 +1,27 @@
+LogisticRegression(C=100, max_iter=10000, random_state=2)
+Training
+     Accuracy: 0.7286821705426356
+     Report:
+              precision    recall  f1-score   support
+
+     endgame       0.65      0.98      0.78        46
+  middlegame       1.00      0.27      0.43        51
+    oppening       0.67      0.97      0.79        32
+
+    accuracy                           0.70       129
+   macro avg       0.78      0.74      0.67       129
+weighted avg       0.80      0.70      0.65       129
+     Number of games: 15
+     Best parameters: {'C': 0.1, 'max_iter': 10000, 'solver': 'liblinear'}
+     Opening predicted as endgame: 0
+     Endgame predicted as opening: 0
+
+     Opening predicted as middlegame: 0
+     Middlegame predicted as opening: 0
+     Middlegame predicted as endgame: 0
+     Endgame predicted as middlegame: 23
+Test
+    Number of test positions: 274
+    Number of correct guesses: 201
+    Accuracy: 73.36%
+    Precision: 73.36%

@@ -1,0 +1,255 @@
+/* src/App.css */
+body {
+  font-family: sans-serif;
+  background-color: #333;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.app-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Necesar pentru PieceSelector */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  margin-top: 50px; /* Aliniere aproximativă cu tabla */
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.game-info {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  width: 560px; /* Aceeași lățime ca tabla */
+  box-sizing: border-box;
+  color: #eee;
+}
+
+.game-info h1 {
+  margin: 0 0 15px 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-group label {
+  font-size: 14px;
+  color: #aaa;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.control-button {
+  background-color: #4a4a4a;
+  color: white;
+  border: 1px solid #666;
+  padding: 10px 20px;
+  min-width: 120px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.control-button:hover {
+  background-color: #5a5a5a;
+  border-color: #888;
+}
+
+/* Stiluri pentru noul indicator (dacă nu le ai deja) */
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-item span:first-child {
+  font-size: 14px;
+  color: #aaa;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.player-turn {
+  padding: 8px 18px; /* Puțin mai mare pentru a semăna cu un buton */
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 84px; /* Aprox. aceeași lățime ca butonul de mod */
+  text-align: center;
+}
+.player-turn.white {
+  background-color: #f0d9b5;
+  color: #333;
+}
+.player-turn.black {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+.moves-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.moves-list li {
+  background-color: #383838;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.moves-list li.placeholder {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 70px);
+  grid-template-rows: repeat(8, 70px);
+  width: 560px;
+  height: 560px;
+  border: 5px solid #4a2d1a;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.square.light {
+  background-color: #f0d9b5;
+}
+
+.square.dark {
+  background-color: #b58863;
+}
+
+.piece-selector {
+  position: absolute;
+  background-color: #2c2c2c;
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+  z-index: 100;
+}
+
+.piece-option {
+  font-size: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.piece-option:hover {
+  background-color: #444;
+}
+
+.piece-option.remove {
+  font-size: 20px;
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.fen-manager {
+  width: 560px; /* Aceeași lățime ca tabla */
+  margin-top: 20px;
+  background-color: #2c2c2c;
+  padding: 15px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.fen-manager label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #aaa;
+  font-weight: bold;
+}
+
+.fen-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.fen-controls input {
+  flex-grow: 1; /* Input-ul va ocupa spațiul rămas */
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.fen-controls button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fen-controls button:hover {
+  background-color: #0056b3;
+}
+
+

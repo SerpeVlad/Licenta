@@ -1,0 +1,15 @@
+DecisionTreeClassifier(random_state=0)
+Accuracy: 0.7867647058823529
+Report:
+              precision    recall  f1-score   support
+
+     endgame       0.60      0.95      0.74        44
+  middlegame       0.79      0.29      0.43        51
+    oppening       0.79      0.90      0.84        41
+
+    accuracy                           0.69       136
+   macro avg       0.73      0.72      0.67       136
+weighted avg       0.73      0.69      0.65       136
+Number of games: 12
+Opening predicted as endgame: 0
+Endgame predicted as opening: 0

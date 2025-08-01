@@ -1,0 +1,94 @@
+About columns: 
+fen: 
+  -Type: object
+  -Unique values: 983014
+  -Missing values: 0
+  -Mean:  Notapplicable
+playing: 
+  -Type: object
+  -Unique values: 1886
+  -Missing values: 0
+  -Mean:  Notapplicable
+score: 
+  -Type: float64
+  -Unique values: 7562
+  -Missing values: 109512
+  -Mean: 20.746931943445475
+mate: 
+  -Type: float64
+  -Unique values: 131
+  -Missing values: 981566
+  -Mean: 0.5878807801884725
+depth: 
+  -Type: int64
+  -Unique values: 236
+  -Missing values: 0
+  -Mean: 33.27937049413516
+game_id: 
+  -Type: object
+  -Unique values: 16643
+  -Missing values: 0
+  -Mean:  Notapplicable
+date: 
+  -Type: object
+  -Unique values: 6
+  -Missing values: 0
+  -Mean:  Notapplicable
+time: 
+  -Type: object
+  -Unique values: 15126
+  -Missing values: 0
+  -Mean:  Notapplicable
+white: 
+  -Type: object
+  -Unique values: 1514
+  -Missing values: 0
+  -Mean:  Notapplicable
+black: 
+  -Type: object
+  -Unique values: 1511
+  -Missing values: 0
+  -Mean:  Notapplicable
+white_result: 
+  -Type: object
+  -Unique values: 3
+  -Missing values: 0
+  -Mean:  Notapplicable
+black_result: 
+  -Type: object
+  -Unique values: 3
+  -Missing values: 0
+  -Mean:  Notapplicable
+white_elo: 
+  -Type: object
+  -Unique values: 1143
+  -Missing values: 0
+  -Mean:  Notapplicable
+black_elo: 
+  -Type: object
+  -Unique values: 1173
+  -Missing values: 0
+  -Mean:  Notapplicable
+opening: 
+  -Type: object
+  -Unique values: 1166
+  -Missing values: 0
+  -Mean:  Notapplicable
+time_control: 
+  -Type: object
+  -Unique values: 223
+  -Missing values: 0
+  -Mean:  Notapplicable
+termination: 
+  -Type: object
+  -Unique values: 2
+  -Missing values: 0
+  -Mean:  Notapplicable
+
+
+Number of games: 16 643
+Median number of moves for each game: 61
+Min number of moves for a game: 2
+Max number of moves for a game: 244
+
+Termination of games: ['Normal', 'Time forfeit']
