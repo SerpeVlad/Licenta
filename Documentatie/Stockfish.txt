@@ -1,4 +1,3 @@
-https://blogs.cornell.edu/info2040/2022/09/30/game-theory-how-stockfish-mastered-chess/
- Stockfish uses a probabilistic approach to generate a decimal (evaluation)
- Stockfish uses a static evaluation function, or a function which calculates an estimate evaluation of the position using a heuristic (a manually constructed algorithm designed to fit any arbitrary chess position) 
-	=> ca daca ii dau datele la un AI sa imi dea evaluarea e diferit
+version https://git-lfs.github.com/spec/v1
+oid sha256:e29aeed919c64242911868741258f3c08d1667c02da24b0ef252789c9f6d71ff
+size 449

@@ -1,20 +1,3 @@
-// src/components/PieceSelector.js
-import React from 'react';
-import { PIECES, AVAILABLE_PIECES } from '../pieces'; // La fel, mergem un folder în sus
-
-function PieceSelector({ onSelect, onRemove, top, left }) {
-  return (
-    <div className="piece-selector" style={{ top: `${top}px`, left: `${left}px` }}>
-      {AVAILABLE_PIECES.map(pieceKey => (
-        <div key={pieceKey} className="piece-option" onClick={() => onSelect(pieceKey)}>
-          {PIECES[pieceKey]}
-        </div>
-      ))}
-      <div className="piece-option remove" onClick={onRemove}>
-        Gol
-      </div>
-    </div>
-  );
-}
-
-export default PieceSelector;
+version https://git-lfs.github.com/spec/v1
+oid sha256:4be867feb659da9284ed2e11cc8dfb753cde69eafecd6117ea34f0380aa7e30b
+size 648

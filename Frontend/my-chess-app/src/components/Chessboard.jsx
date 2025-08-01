@@ -1,28 +1,3 @@
-// src/components/Chessboard.jsx
-import React from 'react';
-import Square from './Square.jsx';
-
-function Chessboard({ board, onSquareClick }) {
-  if (!board || board.length === 0) {
-    return <div>Loading board...</div>; 
-  }
-
-  return (
-    <div className="chessboard">
-      {board.map((row, rowIndex) => (
-        <React.Fragment key={rowIndex}>
-          {row.map((piece, colIndex) => (
-            <Square
-              key={`${rowIndex}-${colIndex}`}
-              piece={piece} // piece este acum {type, color} sau null
-              isLight={(rowIndex + colIndex) % 2 !== 0}
-              onClick={(e) => onSquareClick(rowIndex, colIndex, e)}
-            />
-          ))}
-        </React.Fragment>
-      ))}
-    </div>
-  );
-}
-
-export default Chessboard;
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d5e60e5bdb840904867cd796da18ffe7422c1544645809a216bbc8761aa5d3c
+size 789

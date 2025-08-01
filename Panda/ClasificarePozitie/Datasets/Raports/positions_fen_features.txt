@@ -1,17 +1,3 @@
-About columns: 
-
-
-Number of games: 20
-Median number of moves for each game: 61
-Min number of moves for a game: 8.0
-Max number of moves for a game: 63.5
-
-Openings: 296
-Middlegames: 431
-Endgames: 501
-Material mediu: 17.03333333333333
-Material mediu Alb: 18.0
-Material mediu Negru: 16.066666666666666
-Numar mediu de pioni Alb: 3.8
-Numar mediu de pioni Negru: 4.0
-Numar mediu de pioni: 3.9
+version https://git-lfs.github.com/spec/v1
+oid sha256:922684b2f2a85abfa34900235eb5cb93bdd3f18b1f3bc1745a7f62cc92d42d1a
+size 403
