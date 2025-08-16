@@ -1,0 +1,15 @@
+﻿  Nebun.cpp
+C:\Users\serpe\Desktop\LICENTA\Panda\DepthSearch\Nebun.cpp(24,7): error C2374: 'YMove': redefinition; multiple initialization
+C:\Users\serpe\Desktop\LICENTA\Panda\DepthSearch\Nebun.cpp(8,7): message : see declaration of 'YMove'
+C:\Users\serpe\Desktop\LICENTA\Panda\DepthSearch\Nebun.cpp(39,7): error C2374: 'YMove': redefinition; multiple initialization
+C:\Users\serpe\Desktop\LICENTA\Panda\DepthSearch\Nebun.cpp(8,7): message : see declaration of 'YMove'
+C:\Users\serpe\Desktop\LICENTA\Panda\DepthSearch\Nebun.cpp(54,7): error C2374: 'YMove': redefinition; multiple initialization
+C:\Users\serpe\Desktop\LICENTA\Panda\DepthSearch\Nebun.cpp(8,7): message : see declaration of 'YMove'
+  Piesa.cpp
+  Pion.cpp
+  Rege.cpp
+C:\Users\serpe\Desktop\LICENTA\Panda\DepthSearch\Rege.cpp(19,10): warning C4804: '<=': unsafe use of type 'bool' in operation
+C:\Users\serpe\Desktop\LICENTA\Panda\DepthSearch\Rege.cpp(19,43): warning C4804: '<=': unsafe use of type 'bool' in operation
+C:\Users\serpe\Desktop\LICENTA\Panda\DepthSearch\Rege.cpp(21,85): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  DepthSearch2.cpp
+  Generating Code...
